@@ -24,7 +24,7 @@ def careerFit(studentId: str):
 
 
 @router.get("/getCareerPaths")
-def careerFit():
+def careerFit(studentId: str):
     return carrerfittingService.getCareerPaths()
 
 
