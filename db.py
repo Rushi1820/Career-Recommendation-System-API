@@ -6,7 +6,7 @@ import model
 
 # Replace these with your MongoDB connection details
 
-mongo_uri = "mongodb+srv://rushivardhan18:<db_password>@skilledu.uhi4g.mongodb.net/?retryWrites=true&w=majority&appName=Skilledu"
+mongo_uri = "mongodb+srv://rushivardhan18:9obDZp4KEel3l693@skilledu.uhi4g.mongodb.net/?retryWrites=true&w=majority&appName=Skilledu"
 mongo_db_name = "Skilledu"
 
 # Create a MongoDB client and connect to your database
@@ -14,7 +14,7 @@ client = MongoClient(mongo_uri)
 database: Database = client[mongo_db_name]
 
 
-collection1: Collection[model.UserModel] = database["StudentDetails"]
+collection1: Collection = database["StudentDetails"]
 collection2: Collection = database["AcademicInfo"]
 collection3: Collection = database["CareerPaths"]
 collection4: Collection = database["Overallperformance_semwise"]
