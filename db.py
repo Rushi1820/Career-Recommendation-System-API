@@ -6,8 +6,8 @@ import model
 
 # Replace these with your MongoDB connection details
 
-mongo_uri = "mongodb+srv://kssrikumar180703:Pa55w0rd@cluster0.tehiwwb.mongodb.net/Skill_Edu"
-mongo_db_name = "Skill_Edu"
+mongo_uri = "mongodb+srv://rushivardhan18:<db_password>@skilledu.uhi4g.mongodb.net/?retryWrites=true&w=majority&appName=Skilledu"
+mongo_db_name = "Skilledu"
 
 # Create a MongoDB client and connect to your database
 client = MongoClient(mongo_uri)

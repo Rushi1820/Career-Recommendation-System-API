@@ -23,9 +23,9 @@ def getallstudents(careerpath: str = None):
 
 
 @router.post("/addcareerpath")
-async def addcarerpath(request: Request):
+def addcarerpath(request: Request):
 
-    data = await request.json()
+    data =request.json()
     career_path = carrer_path(
         _id=data.get('_id'),
         role=data.get('role'),
